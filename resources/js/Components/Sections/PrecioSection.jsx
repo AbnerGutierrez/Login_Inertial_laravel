@@ -9,169 +9,103 @@ export default function PrecioSection() {
                             Nuestros costos y planes
                         </h2>
                         <p className="mb-5 font-light  sm:text-xl ">
-                            Estos son nuestros planes más contratados. Consulta{" "}
-                            <a
-                                className="text-blue-600 hover:text-blue-800"
-                                href=""
-                            >
-                                otros planes
-                            </a>{" "}
-                            para conocer más opciones y precios adicionales.
+                            El precio depende del tipo de desarrollo que
+                            requiera tu proyecto. Por eso, ofrecemos planes
+                            diseñados para ajustarse a distintas necesidades.{" "}
                         </p>
                     </div>
                     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 ">
                         <CardPrecio
-                            titulo={"Plan basico"}
+                            titulo={"Pago único"}
                             descripcion={
-                                "Para sitios estaticos que solo necesitan presencia en internet. "
+                                "Realiza un solo pago por el desarrollo de tu sitio web. Ideal si necesitas una web funcional sin mantenimiento continuo."
                             }
-                            precio={"599"}
-                            onClick={() => setSelectedCard("basico")}
+                            onClick={() => setSelectedCard("pago-unico")}
                             items={[
                                 {
-                                    texto: "Diseño personalizado",
+                                    texto: "Diseño web personalizado",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Desarollo web",
+                                    texto: "Desarrollo web completo",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Dominio .com",
+                                    texto: "Entrega del proyecto funcional",
                                     disponible: true,
                                 },
+
                                 {
-                                    texto: "Hosting",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Atencion 24/7",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Cantidad de páginas ilimitadas",
+                                    texto: "Soporte técnico continuo",
                                     disponible: false,
                                 },
                                 {
-                                    texto: "Cambios mensuales ilimitados",
+                                    texto: "Cambios o mejoras posteriores",
                                     disponible: false,
                                 },
                                 {
-                                    texto: "Correos corporativos",
-                                    disponible: false,
-                                },
-                                {
-                                    texto: "SEO inicial",
-                                    disponible: false,
-                                },
-                                {
-                                    texto: "Soporte prioritario",
+                                    texto: "Mantenimiento mensual",
                                     disponible: false,
                                 },
                             ]}
                         />
 
                         <CardPrecio
-                            titulo={"Plan avanzado"}
+                            titulo={"Pagos mensuales"}
                             descripcion={
-                                "Para negocios que necesitan más secciones y funciones."
+                                "Modelo flexible con pagos mensuales que incluye soporte y mantenimiento continuo para tu sitio web."
                             }
-                            precio={"999"}
-                            onClick={() => setSelectedCard("basico")}
+                            onClick={() => setSelectedCard("mensual")}
                             items={[
                                 {
-                                    texto: "Diseño personalizado",
+                                    texto: "Diseño y desarrollo web",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Desarollo web",
+                                    texto: "Soporte técnico mensual",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Dominio .com",
+                                    texto: "Cambios y ajustes periódicos",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Hosting",
+                                    texto: "Mantenimiento y actualizaciones",
                                     disponible: true,
                                 },
+
                                 {
-                                    texto: "Atencion 24/7",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Cantidad de páginas ilimitadas",
+                                    texto: "Contrato anual obligatorio",
                                     disponible: false,
-                                },
-                                {
-                                    texto: "Cambios mensuales ilimitados",
-                                    disponible: false,
-                                },
-                                {
-                                    texto: "Correos corporativos",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "SEO inicial",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Soporte prioritario",
-                                    disponible: true,
                                 },
                             ]}
                         />
 
                         <CardPrecio
-                            titulo={"Plan empresarial"}
+                            titulo={"Pagos anuales"}
                             descripcion={
-                                "Para tiendas online o sistemas personalizados. "
+                                "La opción más completa para proyectos serios. Incluye soporte prioritario y mejoras continuas durante todo el año."
                             }
-                            precio={"1999"}
-                            onClick={() => setSelectedCard("basico")}
+                            onClick={() => setSelectedCard("anual")}
                             items={[
                                 {
-                                    texto: "Diseño personalizado",
+                                    texto: "Diseño y desarrollo avanzado",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Desarollo web",
+                                    texto: "Soporte técnico prioritario",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Dominio .com",
+                                    texto: "Cambios y mejoras continuas",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Hosting",
+                                    texto: "Mantenimiento y optimización",
                                     disponible: true,
                                 },
                                 {
-                                    texto: "Atencion 24/7",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Cantidad de páginas ilimitadas",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Cambios mensuales ilimitados",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Correos corporativos",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "SEO avanzado",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Soporte prioritario",
-                                    disponible: true,
-                                },
-                                {
-                                    texto: "Funciones avanzadas (base de datos, panel, pagos, integraciones)",
+                                    texto: "Ideal para sistemas y tiendas online",
                                     disponible: true,
                                 },
                             ]}

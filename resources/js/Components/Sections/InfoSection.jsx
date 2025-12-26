@@ -17,10 +17,10 @@ export default function InfoSection({ imagen, titulo, descripcion, reverse,id,ba
                 </div>
 
                 {/* Texto */}
-                <div className={`flex-1 ${reverse ? "order-1" : "order-2"} text-center lg:text-start`}>
-                    <h1 className="text-4xl font-extrabold text-indigo-600 md:text-5xl leading-tight">
+                <div className={`flex-1 ${reverse ? "order-1" : "order-2"} text-center mt-6 lg:mt-0 lg:text-start`}>
+                    <h3 className="text-4xl font-extrabold text-indigo-600 md:text-5xl leading-tight">
                         {titulo}
-                    </h1>
+                    </h3>
 
                     <p className="mt-4 text-lg text-gray-600">
                         {descripcion}

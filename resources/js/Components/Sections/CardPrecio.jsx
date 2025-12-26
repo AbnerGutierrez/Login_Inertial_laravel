@@ -32,10 +32,7 @@ export default function ({ titulo, descripcion, precio, items, onClick }) {
             <h3 className="mb-4 text-2xl font-semibold ">{titulo}</h3>
             <p className="font-light  sm:text-lg ">{descripcion}</p>
             <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-4xl font-extrabold text-indigo-600">
-                    {precio} MXN
-                </span>
-                <span className="">/mensuales</span>
+             
             </div>
 
             <ul role="list" className="mb-8 space-y-4 text-left">
