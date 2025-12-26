@@ -1,7 +1,7 @@
 import useInView from "@/hooks/useInView";
 
 export default function WebTypes({ webTypes = [], id }) {
-    const [ref, visible] = useInView({ threshold: 0.2 });
+    const [ref, visible] = useInView({ threshold: 0.02 });
 
     return (
         <section

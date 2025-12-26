@@ -112,12 +112,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <TestimonioSection
                         testimonios={[
                             {
-                                nombre: "Roman Gutierrez",
-                                rol: "Topografo profesional",
+                                nombre: "Rodolfo Hernandez",
+                                rol: "Freelance",
                                 foto: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
                                 estrellas: 5,
                                 testimonio:
-                                    "Gracias a LunaDev pude darme a conocer en internes, lo que me permitio obtener varios proyectos topograficos.",
+                                    "Gracias a LunaDev pude darme a conocer en internes, y crear mis primeros ingresos como freelance.",
                             },
                             {
                                 nombre: "Alejandro Flores",
@@ -133,7 +133,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 foto: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
                                 estrellas: 4,
                                 testimonio:
-                                    "Mi portafolio quedo increible y gracias a ello he podidio obtener muchas entrevistas.",
+                                    "Mi portafolio quedó increíble y me ha ayudado a conseguir múltiples entrevistas profesionales.",
                             },
                         ]}
                     />
