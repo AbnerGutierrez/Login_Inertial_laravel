@@ -31,6 +31,15 @@ class AuthenticatedSessionController extends Controller
     {
         $request->authenticate();
 
+
+        if (auth()->user()->status !== 1) {
+            auth()->logout();
+
+            return back()->withErrors([
+                'email' => 'Tu cuenta aún no ha sido activada por un administrador.',
+            ]);
+        }
+
         $request->session()->regenerate();
 
         return redirect()->intended(route('dashboard', absolute: false));
