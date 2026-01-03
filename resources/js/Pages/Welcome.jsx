@@ -112,18 +112,17 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <TestimonioSection
                         testimonios={[
                             {
-                                nombre: "Rodolfo Hernandez",
-                                rol: "Freelance",
-                                foto: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-                                estrellas: 5,
+                                nombre: "MMM Galeana",
+                                rol: "Iglesia",
+                                foto: "https://mmmgaleana.com/images/hero-iglesia.png",
                                 testimonio:
-                                    "Gracias a LunaDev pude darme a conocer en internes, y crear mis primeros ingresos como freelance.",
+                                    "Una landing creada para informar, conectar y comunicar de manera clara con nuestra comunidad.",
+                                    url:"https://mmmgaleana.com/"
                             },
                             {
                                 nombre: "Alejandro Flores",
                                 rol: "Emprendedor",
                                 foto: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-                                estrellas: 5,
                                 testimonio:
                                     "LuneDev me permitio conectar con clientes y obtener mis primeras ventas.",
                             },
@@ -131,7 +130,6 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 nombre: "Ana Torres",
                                 rol: "Actriz",
                                 foto: "https://cdn-icons-png.flaticon.com/512/219/219983.png",
-                                estrellas: 4,
                                 testimonio:
                                     "Mi portafolio quedó increíble y me ha ayudado a conseguir múltiples entrevistas profesionales.",
                             },
