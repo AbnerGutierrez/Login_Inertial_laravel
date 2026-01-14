@@ -6,7 +6,7 @@ export default function VisitLayout({ children }) {
     const [selectedCard, setSelectedCard] = useState(null);
     return (
         <>
-            <nav className="border-b border-gray-100 bg-white">
+           <nav className="fixed top-0 left-0 w-full border-b border-gray-100 bg-white z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
                     {/* Logo */}
                     <div className="text-xl font-semibold tracking-wide">
@@ -71,57 +71,57 @@ export default function VisitLayout({ children }) {
                 </div>
 
                 {/* Menú desplegable móvil */}
+                {open && (
+                    <div
+                        className="fixed inset-0 bg-black/50 z-40 md:hidden"
+                        onClick={() => setOpen(false)}
+                    />
+                )}
                 <div
-                    className={`${
-                        open ? "block" : "hidden"
-                    } md:hidden px-4 pb-4 space-y-2`}
+                    className={`fixed inset-0 bg-white z-50 transform transition-transform duration-300 ease-in-out md:hidden
+        ${open ? "translate-x-0" : "-translate-x-full"}
+    `}
                 >
-                    <a
-                        href="#loQueHacemos"
-                        className="block hover:text-gray-500 py-1"
-                    >
-                        Lo que hacemos
-                    </a>
-                    <a
-                        href="#quienSomos"
-                        className="block hover:text-gray-500 py-1"
-                    >
-                        Quienes somos
-                    </a>
-                    <a
-                        href="#clientes"
-                        className="block hover:text-gray-500 py-1"
-                    >
-                        Nuestros clientes
-                    </a>
-                    <a
-                        href="#costosYplanes"
-                        className="block hover:text-gray-500 py-1"
-                    >
-                        Costos y planes
-                    </a>
-                    <a
-                        href="#contacto"
-                        className="block hover:text-gray-500 py-1"
-                    >
-                        Contacto
-                    </a>
-                    <Link
-                        href={route("login")}
-                        className="block hover:text-gray-500 py-1"
-                    >
-                        Iniciar sesión
-                    </Link>
-                    <Link
-                        href={route("register")}
-                        className="block hover:text-gray-500 py-1"
-                    >
-                        Registrarse
-                    </Link>
+                    {/* Header del menú */}
+                    <div className="flex items-center justify-between px-6 py-4 border-b">
+                        <span className="text-xl font-semibold">LuneDev</span>
+                        <button
+                            onClick={() => setOpen(false)}
+                            className="text-2xl"
+                        >
+                            ✕
+                        </button>
+                    </div>
+
+                    {/* Links */}
+                    <nav className="flex flex-col gap-6 px-6 py-10 text-lg font-medium text-gray-700">
+                        <a href="#tipos" onClick={() => setOpen(false)}>
+                            ¿Qué web necesito?
+                        </a>
+                        <a href="#costosYplanes" onClick={() => setOpen(false)}>
+                            Costos y planes
+                        </a>
+                        <a href="#contacto" onClick={() => setOpen(false)}>
+                            Contacto
+                        </a>
+
+                        <Link
+                            href={route("login")}
+                            onClick={() => setOpen(false)}
+                        >
+                            Iniciar sesión
+                        </Link>
+                        <Link
+                            href={route("register")}
+                            onClick={() => setOpen(false)}
+                        >
+                            Registrarse
+                        </Link>
+                    </nav>
                 </div>
             </nav>
-            <main>{children}</main>
-            <FooterM/>
+            <main className="pt-20">{children}</main>
+            <FooterM />
         </>
     );
 }
