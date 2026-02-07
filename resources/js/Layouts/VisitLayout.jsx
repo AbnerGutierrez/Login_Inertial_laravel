@@ -48,8 +48,9 @@ export default function VisitLayout({ children }) {
                             href="#porquenecesitas"
                             onClick={() => setOpen(false)}
                         >
-                            ¿Por qué necesito una pagina web ?
+                            ¿Por qué necesito una pagina web ? 
                         </a>
+
                         <a
                             className="hover:text-gray-500 transition"
                             href="#tipos"
@@ -126,7 +127,7 @@ export default function VisitLayout({ children }) {
                             Inicio
                         </a>
                         <a href="#porquenecesitas" onClick={() => setOpen(false)}>
-                            ¿Por qué necesito una pagina we ?
+                            ¿Por qué necesito una pagina web ?
                         </a>
                         <a href="#tipos" onClick={() => setOpen(false)}>
                             ¿Qué web necesito?
