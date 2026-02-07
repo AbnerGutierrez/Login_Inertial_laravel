@@ -1,3 +1,5 @@
+import { Link } from "@inertiajs/react";
+
 export default function FooterM() {
     return (
         <footer className="bg-indigo-600 text-white py-10">
@@ -15,32 +17,67 @@ export default function FooterM() {
                     <h3 className="font-semibold mb-3">Navegación</h3>
                     <ul className="space-y-2 text-indigo-100">
                         <li>
-                            <a href="#" className="hover:text-white">
+                            <a href="#inicio" onClick={() => setOpen(false)}>
                                 Inicio
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="hover:text-white">
-                                Servicios
+                            <a href="#porweb" onClick={() => setOpen(false)}>
+                                ¿Por qué necesito una pagina we ?
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="hover:text-white">
-                                Nosotros
+                            <a href="#tipos" onClick={() => setOpen(false)}>
+                                ¿Qué web necesito?
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="hover:text-white">
+                            <a href="#porqueluna" onClick={() => setOpen(false)}>
+                                ¿Por qué lunaDev ?
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#costosYplanes"
+                                onClick={() => setOpen(false)}
+                            >
+                                Costos y planes
+                            </a>
+                        </li>
+                       {/* <li>
+                            <a href="#ourwork" onClick={() => setOpen(false)}>
+                                Nuestro trabajo
+                            </a>
+                        </li>*/}
+                        <li>
+                            <a href="#contacto" onClick={() => setOpen(false)}>
                                 Contacto
                             </a>
                         </li>
+                        {/*<li>
+                            <Link
+                                href={route("login")}
+                                onClick={() => setOpen(false)}
+                            >
+                                Iniciar sesión
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={route("register")}
+                                onClick={() => setOpen(false)}
+                            >
+                                Registrarse
+                            </Link>
+                        </li>*/}
                     </ul>
                 </div>
 
                 <div>
-                    <h3 className="font-semibold mb-3">Síguenos</h3>
+                    {/* <h3 className="font-semibold mb-3">Síguenos</h3> */}
+                    <h3 className="font-semibold mb-3">Atención 24/7</h3>
                     <div className="flex gap-4">
-                        <a href="#" className="hover:text-white text-xl">
+                        {/* <a href="#" className="hover:text-white text-xl">
                             📘
                         </a>
                         <a href="#" className="hover:text-white text-xl">
@@ -51,13 +88,13 @@ export default function FooterM() {
                         </a>
                         <a href="#" className="hover:text-white text-xl">
                             🐦
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
 
             <div className="text-center text-indigo-200 text-sm mt-10 border-t border-indigo-500 pt-6">
-                © 2025 LuneDev.
+                © 2026 LuneDev.
             </div>
         </footer>
     );

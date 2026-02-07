@@ -1,6 +1,4 @@
 import { Head, Link } from "@inertiajs/react";
-import { useState } from "react";
-import Modal from "@/Components/Modal";
 import HeroSection from "@/Components/Sections/HeroSection";
 import InfoSection from "@/Components/Sections/InfoSection";
 import PrecioSection from "@/Components/Sections/PrecioSection";
@@ -15,10 +13,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             <Head title="Inicio" />
             <VisitLayout>
                 <div>
-                    <HeroSection />
+                    <HeroSection id={"inicio"} />
                     <InfoSection
                         baColor={false}
-                        id={"loQueHacemos"}
+                        id={"porquenecesitas"}
                         imagen={"/images/undraw_questions.png"}
                         titulo={"¿ Por que necesitas una pagina web ?"}
                         descripcion={`Es tu mejor herramienta para tener presencia en internet, captar clientes, mostrar lo que haces y diferenciarte de la competencia.`}
@@ -99,7 +97,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
                     <InfoSection
                         baColor={false}
-                        id={"quienSomos"}
+                        id={"porqueluna"}
                         imagen={"/images/undraw_business.png"}
                         titulo={"¿Por qué elegir LunaDev?"}
                         descripcion={`En LunaDev desarrollamos soluciones digitales a la medida de tu negocio.
@@ -109,7 +107,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     />
                     <PrecioSection />
 
-                    <TestimonioSection
+                   {/* <TestimonioSection
+                    id={"ourwork"}
                         testimonios={[
                             {
                                 nombre: "MMM Galeana",
@@ -117,7 +116,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 foto: "https://mmmgaleana.com/images/hero-iglesia.png",
                                 testimonio:
                                     "Una landing creada para informar, conectar y comunicar de manera clara con nuestra comunidad.",
-                                    url:"https://mmmgaleana.com/"
+                                url: "https://mmmgaleana.com/",
                             },
                             {
                                 nombre: "Alejandro Flores",
@@ -134,7 +133,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                     "Mi portafolio quedó increíble y me ha ayudado a conseguir múltiples entrevistas profesionales.",
                             },
                         ]}
-                    />
+                    />*/}
                     <Contact
                         id={"contacto"}
                         testimonios={[

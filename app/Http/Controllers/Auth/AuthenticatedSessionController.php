@@ -30,17 +30,13 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
-
-
-        if (auth()->user()->status !== 1) {
-            auth()->logout();
-
-            return back()->withErrors([
-                'email' => 'Tu cuenta aún no ha sido activada por un administrador.',
-            ]);
-        }
-
         $request->session()->regenerate();
+
+        $user = auth()->user();
+
+        if ($user->status === 1) {
+            return redirect()->intended(route('admin.index', absolute: false));
+        }
 
         return redirect()->intended(route('dashboard', absolute: false));
     }

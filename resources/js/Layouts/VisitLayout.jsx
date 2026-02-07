@@ -6,7 +6,7 @@ export default function VisitLayout({ children }) {
     const [selectedCard, setSelectedCard] = useState(null);
     return (
         <>
-           <nav className="fixed top-0 left-0 w-full border-b border-gray-100 bg-white z-50">
+            <nav className="fixed top-0 left-0 w-full border-b border-gray-100 bg-white z-50">
                 <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
                     {/* Logo */}
                     <div className="text-xl font-semibold tracking-wide">
@@ -37,36 +37,63 @@ export default function VisitLayout({ children }) {
                     {/* Links */}
                     <div className="hidden md:flex gap-6 text-gray-700 font-medium">
                         <a
-                            href="#tipos"
                             className="hover:text-gray-500 transition"
+                            href="#inicio"
+                            onClick={() => setOpen(false)}
                         >
-                            ¿ Qué web necesito ?
+                            Inicio
                         </a>
                         <a
-                            href="#costosYplanes"
                             className="hover:text-gray-500 transition"
+                            href="#porquenecesitas"
+                            onClick={() => setOpen(false)}
+                        >
+                            ¿Por qué necesito una pagina we ?
+                        </a>
+                        <a
+                            className="hover:text-gray-500 transition"
+                            href="#tipos"
+                            onClick={() => setOpen(false)}
+                        >
+                            ¿Qué web necesito?
+                        </a>
+                        <a
+                            className="hover:text-gray-500 transition"
+                            href="#porqueluna"
+                            onClick={() => setOpen(false)}
+                        >
+                            ¿Por qué lunaDev ?
+                        </a>
+                        <a
+                            className="hover:text-gray-500 transition"
+                            href="#costosYplanes"
+                            onClick={() => setOpen(false)}
                         >
                             Costos y planes
                         </a>
+                        {/* <a href="#ourwork" onClick={() => setOpen(false)}>
+                            Nuestro trabajo 
+                        </a>*/}
                         <a
-                            href="#contacto"
                             className="hover:text-gray-500 transition"
+                            href="#contacto"
+                            onClick={() => setOpen(false)}
                         >
                             Contacto
                         </a>
 
-                        <Link
+                        {/* <Link
                             href={route("login")}
-                            className="hover:text-gray-500 transition"
+                            onClick={() => setOpen(false)}
                         >
                             Iniciar sesión
                         </Link>
                         <Link
                             href={route("register")}
-                            className="hover:text-gray-500 transition"
+                            onClick={() => setOpen(false)}
                         >
                             Registrarse
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
 
@@ -95,17 +122,29 @@ export default function VisitLayout({ children }) {
 
                     {/* Links */}
                     <nav className="flex flex-col gap-6 px-6 py-10 text-lg font-medium text-gray-700">
+                        <a href="#inicio" onClick={() => setOpen(false)}>
+                            Inicio
+                        </a>
+                        <a href="#porquenecesitas" onClick={() => setOpen(false)}>
+                            ¿Por qué necesito una pagina we ?
+                        </a>
                         <a href="#tipos" onClick={() => setOpen(false)}>
                             ¿Qué web necesito?
+                        </a>
+                        <a href="#porqueluna" onClick={() => setOpen(false)}>
+                            ¿Por qué lunaDev ?
                         </a>
                         <a href="#costosYplanes" onClick={() => setOpen(false)}>
                             Costos y planes
                         </a>
+                        {/* <a href="#ourwork" onClick={() => setOpen(false)}>
+                            Nuestro trabajo 
+                        </a>*/}
                         <a href="#contacto" onClick={() => setOpen(false)}>
                             Contacto
                         </a>
 
-                        <Link
+                        {/* <Link
                             href={route("login")}
                             onClick={() => setOpen(false)}
                         >
@@ -116,7 +155,7 @@ export default function VisitLayout({ children }) {
                             onClick={() => setOpen(false)}
                         >
                             Registrarse
-                        </Link>
+                        </Link> */}
                     </nav>
                 </div>
             </nav>

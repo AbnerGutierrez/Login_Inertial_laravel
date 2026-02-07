@@ -1,8 +1,9 @@
 import useInView from "@/hooks/useInView";
-export default function HeroSection() {
-    const [ref, visible] = useInView({ threshold: 0.2 });
+export default function HeroSection(id) {
+    const [ref, visible] = useInView({ threshold: 0.2});
     return (
         <section
+        id={id}
             ref={ref}
             className={`bg-white reveal ${visible ? "show" : ""}`}
         >

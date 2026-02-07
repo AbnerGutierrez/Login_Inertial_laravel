@@ -1,8 +1,9 @@
 import useInView from "@/hooks/useInView";
-export default function TestimonioSection({ testimonios = [] }) {
+export default function TestimonioSection({ testimonios = [],id }) {
     const [ref, visible] = useInView({ threshold: 0.2 });
     return (
         <section
+        id={id}
             ref={ref}
             className={`py-20 bg-indigo-100 reveal ${visible ? "show" : ""}`}
         >
@@ -58,7 +59,13 @@ export default function TestimonioSection({ testimonios = [] }) {
                             <p className="text-gray-700 leading-relaxed">
                                 {item.testimonio}
                             </p>
-                            <a href={item.url} target="_blanck" className="text-blue-600 hover:text-blue-800 hover:underline">Ver</a>
+                            <a
+                                href={item.url}
+                                target="_blanck"
+                                className="text-blue-600 hover:text-blue-800 hover:underline"
+                            >
+                                Ver
+                            </a>
                         </div>
                     ))}
                 </div>

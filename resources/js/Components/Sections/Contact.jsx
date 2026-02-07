@@ -58,7 +58,7 @@ export default function Contact({ id }) {
 
                     {/* EMAIL */}
                     <a
-                        href="mailto:contacto@tudominio.com"
+                        href="mailto:lunadevbusiness@gmail.com"
                         className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-left border"
                     >
                         <div className="flex items-center gap-5 mb-4">
@@ -78,7 +78,7 @@ export default function Contact({ id }) {
                         </div>
 
                         <p className="text-lg font-medium text-gray-700">
-                            soporte@lunadev.com
+                            lunadevbusiness@gmail.com
                         </p>
 
                         <span className="inline-block mt-4 text-indigo-600 font-semibold group-hover:underline">
