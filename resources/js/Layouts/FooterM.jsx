@@ -23,7 +23,7 @@ export default function FooterM() {
                         </li>
                         <li>
                             <a href="#porweb" onClick={() => setOpen(false)}>
-                                ¿Por qué necesito una pagina we ?
+                                ¿Por qué necesito una pagina web ?
                             </a>
                         </li>
                         <li>
