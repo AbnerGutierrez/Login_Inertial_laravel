@@ -9,9 +9,9 @@ Route::get('/', function () {
     return Inertia::render('Welcome', []);
 })->name('home');
 
-Route::get('/Abner', function () {
-    return response()->file(public_path('portafolioabner/index.html'));
-});
+Route::get('/ejemplobarber', function () {
+    return Inertia::render('ejemplobarber', []);
+})->name('ejemplobarber');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/dashboard', [AdminWelcomeController::class, 'index'])->name('admin.index');
@@ -29,3 +29,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__ . '/auth.php';
+
