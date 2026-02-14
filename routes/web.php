@@ -9,7 +9,7 @@ Route::get('/', function () {
     return Inertia::render('Welcome', []);
 })->name('home');
 
-Route::get('/ejemplobarber', function () {
+Route::get('/rudeboysejemplob', function () {
     return Inertia::render('ejemplobarber', []);
 })->name('ejemplobarber');
 
