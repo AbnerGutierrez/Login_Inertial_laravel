@@ -22,7 +22,7 @@ export default function FooterM() {
                             </a>
                         </li>
                         <li>
-                            <a href="#porweb" onClick={() => setOpen(false)}>
+                            <a href="#porquenecesitas" onClick={() => setOpen(false)}>
                                 ¿Por qué necesito una pagina web ?
                             </a>
                         </li>

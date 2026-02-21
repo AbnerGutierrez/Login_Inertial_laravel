@@ -23,10 +23,10 @@ export default function HeroSection(id) {
 
                     <div className="mt-8 flex gap-4 justify-center lg:justify-start">
                         <a
-                            href="#loQueHacemos"
+                            href="#porquenecesitas"
                             className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition"
                         >
-                            Saber mas
+                            Saber más
                         </a>
 
                         <a
