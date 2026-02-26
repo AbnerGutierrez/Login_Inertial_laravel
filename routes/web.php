@@ -13,9 +13,9 @@ Route::get('/rudeboysejemplob', function () {
     return Inertia::render('ejemplobarber', []);
 })->name('ejemplobarber');
 
-Route::get('/pericocrudoejemplo', function () {
-    return Inertia::render('ejemploperico', []);
-})->name('ejemploperico');
+// Route::get('/pericocrudoejemplo', function () {
+//     return Inertia::render('ejemploperico', []);
+// })->name('ejemploperico');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/dashboard', [AdminWelcomeController::class, 'index'])->name('admin.index');
